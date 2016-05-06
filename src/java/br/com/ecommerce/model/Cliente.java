@@ -90,4 +90,9 @@ public class Cliente {
     public void setCarrinho(Carrinho carrinho) {
         this.carrinho = carrinho;
     }
+    
+    @Override
+    public String toString(){
+        return "Cliente{id: "+id+", Nome: "+nome+"}";
+    }
 }

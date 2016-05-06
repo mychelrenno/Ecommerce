@@ -32,4 +32,8 @@ public class Carrinho {
     public void setProdutoList(List<Produto> produtoList) {
         this.produtoList = produtoList;
     }
+    
+    public String toString(){
+        return "Carrinho{id: "+id+"}";
+    }
 }

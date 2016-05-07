@@ -10,5 +10,5 @@
 CREATE TABLE carrinho
 (
 carr_id int NOT NULL PRIMARY KEY,
-prod_id FOREIGN KEY REFERENCES Produto(prod_id)
+prod_id FOREIGN KEY REFERENCES produto(prod_id)
 );

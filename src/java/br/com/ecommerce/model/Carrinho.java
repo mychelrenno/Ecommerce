@@ -13,6 +13,10 @@ import java.util.List;
  */
 public class Carrinho {
     
+    public Carrinho(){
+        
+    }
+    
     private int id;
     
     private List<Produto> produtoList;

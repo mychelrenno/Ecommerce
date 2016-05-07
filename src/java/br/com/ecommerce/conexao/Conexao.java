@@ -8,6 +8,8 @@ package br.com.ecommerce.conexao;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -24,8 +26,12 @@ public class Conexao {
         
     }
     
-    public Connection getConnection() throws SQLException{
-        connection = DriverManager.getConnection(url, user, pass);
+    public Connection getConnection(){
+        try {
+            connection = DriverManager.getConnection(url, user, pass);
+        } catch (SQLException ex) {
+            Logger.getLogger(Conexao.class.getName()).log(Level.SEVERE, null, ex);
+        }
         return connection;
     }
 }

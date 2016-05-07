@@ -11,6 +11,10 @@ package br.com.ecommerce.model;
  */
 public class Endereco {
     
+    public Endereco(){
+        
+    }
+    
     private int id;
     
     private String pais;

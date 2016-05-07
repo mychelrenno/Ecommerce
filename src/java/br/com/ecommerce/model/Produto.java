@@ -11,6 +11,10 @@ package br.com.ecommerce.model;
  */
 public class Produto {
     
+    public Produto(){
+        
+    }
+    
     private int id;
     
     private String descricao;

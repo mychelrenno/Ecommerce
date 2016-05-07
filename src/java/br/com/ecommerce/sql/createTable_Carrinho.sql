@@ -7,7 +7,7 @@
  * Author:  Mychel Rennó
  * Created: 06/05/2016
  */
-CREATE TABLE Carrinho
+CREATE TABLE carrinho
 (
 carr_id int NOT NULL PRIMARY KEY,
 prod_id FOREIGN KEY REFERENCES Produto(prod_id)
